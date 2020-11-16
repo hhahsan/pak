@@ -26,15 +26,7 @@
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <!-- Add icons to the links using the .nav-icon class
              with font-awesome or any other icon font library -->
-  
         <li class="nav-item has-treeview">
-          <a href="/posts" class="nav-link">
-            <i class="nav-icon far fa-clipboard"></i>
-            <p>
-              Post
-            </p>
-          </a>
-        </li>     <li class="nav-item has-treeview">
           <a href="/" class="nav-link">
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
@@ -43,12 +35,33 @@
           </a>
         </li>
         <li class="nav-item has-treeview">
+          <a href="/posts" class="nav-link">
+            <i class="nav-icon far fa-clipboard"></i>
+            <p>
+              Post
+            </p>
+          </a>
+        </li>     
+        <li class="nav-item has-treeview">
           <a href="/data-tables" class="nav-link">
             <i class="nav-icon fas fa-table"></i>
             <p>
               Tables
             </p>
           </a>
+        </li>
+        <li>
+           <!-- /.info-box -->
+           <div class="info-box bg-light">
+            
+
+            <div class="info-box-content">
+              <span class="info-box-text">Status pengajuan</span>
+              <span class="info-box-number badge badge-success">Diterima</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
         </li>
     </nav>
     <!-- /.sidebar-menu -->

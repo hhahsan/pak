@@ -14,3 +14,24 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('dashboard', function () {
+    return view('user/dashboard');
+});
+
+Route::get('data-user', function () {
+    return view('user/dataUser');
+});
+
+Route::get('pengajuan', function () {
+    return view('user/pengajuan');
+});
+
+Route::get('upload-pengajuan', function () {
+    return view('user/uploadPengajuan');
+});
+
+
+Route::get('tambah-pengajuan', function () {
+    return view('user/tambahPengajuan');
+});
