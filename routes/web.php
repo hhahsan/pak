@@ -35,3 +35,6 @@ Route::get('upload-pengajuan', function () {
 Route::get('tambah-pengajuan', function () {
     return view('user/tambahPengajuan');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
