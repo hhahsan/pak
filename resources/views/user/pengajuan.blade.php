@@ -9,7 +9,7 @@
   <!-- /.card-header -->
   <div class="card-body p-0">
     <div class="mx-3">
-      <button type="button" class="btn bg-gradient-primary mb-4">Tambah Pengajuan</button>
+      <a href="/tambah-pengajuan" type="button" class="btn bg-gradient-primary mb-4">Tambah Pengajuan</a>
     </div>
     <div class="table-responsive">
       <table class="table m-0">
