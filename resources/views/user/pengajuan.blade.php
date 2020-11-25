@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.user.app')
 @section('title','Data tables')
 
 @section('content')
@@ -8,31 +8,45 @@
   </div>
   <!-- /.card-header -->
   <div class="card-body p-0">
+    <div class="mx-3">
+      <button type="button" class="btn bg-gradient-primary mb-4">Tambah Pengajuan</button>
+    </div>
     <div class="table-responsive">
       <table class="table m-0">
         <thead>
         <tr>
-          <th>Order ID</th>
-          <th>Item</th>
+          <th>No</th>
+          <th>Nama</th>
           <th>Status</th>
-          <th>Popularity</th>
+          <th>Pengajuan ke</th>
+          <th>Tanggal pengajuan</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td><a href="pages/examples/invoice.html">OR9842</a></td>
-          <td>Call of Duty IV</td>
-          <td><span class="badge badge-success">Shipped</span></td>
+          <td>1</td>
+          <td>Nama Pengaju</td>
           <td>
-            <div class="sparkbar" data-color="#00a65a" data-height="20">
-              <div class="form-group clearfix">
-                <div class="icheck-primary d-inline">
-                  <input type="checkbox" id="checkboxPrimary2">
-                  <label for="checkboxPrimary2">
-                  </label>
-                </div>
-              </div>
-            </div>
+            <span class="badge badge-success">Diterima</span>
+          </td>
+          <td>
+            1
+          </td>
+          <td>
+            12-07-2019
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Nama Pengaju</td>
+          <td>
+            <span class="badge badge-danger">Ditolak</span>
+          </td>
+          <td>
+            2
+          </td>
+          <td>
+            12-07-2020
           </td>
         </tr>
         </tbody>
@@ -44,6 +58,7 @@
 </div>
 <!-- /.card -->
 </div>
-<!-- /.col -->  
+<!-- /.col --> 
+
 @endsection
 <!-- TABLE: LATEST ORDERS -->

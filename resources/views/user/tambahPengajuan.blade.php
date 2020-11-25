@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.user.app')
 @section('title','Data tables')
 
 @section('content')
@@ -9,7 +9,6 @@
   </div>
   <!-- /.card-header -->
   <div class="card-body p-0">
-    <button type="button" class="btn bg-gradient-primary">Tambah Pengajuan</button>
     <div class="table-responsive">
       <table class="table m-0">
         <thead>

@@ -11,7 +11,8 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('adminlte/plugins/fontawesome-free/css/all.min.css') }}">
-   
+    <!-- Bootstrap DatePicker-->
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-datepicker.css')}}">
     <!-- iCheck for checkboxes and radio inputs -->
     <link rel="stylesheet" href="{{ asset('adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
      <!-- Ionicons -->
@@ -30,7 +31,7 @@
         <div class="wrapper">
           
           @include('layouts.navbar')
-          @include('layouts.sidebar')
+          @include('layouts.user.sidebar')
           
         
           <!-- Content Wrapper. Contains page content -->
@@ -62,23 +63,6 @@
         <!-- ./wrapper -->
         
         <!-- jQuery -->
-        <script>
-          function myFunction() {
-            var dots = document.getElementById("dots");
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("myBtn");
-          
-            if (dots.style.display === "none") {
-              dots.style.display = "inline";
-              btnText.innerHTML = "See Comments"; 
-              moreText.style.display = "none";
-            } else {
-              dots.style.display = "none";
-              btnText.innerHTML = "Close comments"; 
-              moreText.style.display = "inline";
-            }
-          }
-          </script>
         <script src="{{ asset('adminlte/plugins/jquery/jquery.min.js') }}"></script>
         <!-- Bootstrap 4 -->
         <script src="{{ asset('adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -89,8 +73,14 @@
         <!-- DataTables -->
         <script src="{{ asset('adminlte/plugins/datatables/jquery.dataTables.js')}}"></script>
         <script src="{{ asset('adminlte/plugins/datatables-bs4/js/dataTables.bootstrap4.js') }}"></script>
-        
-        @stack('script')
-        </body>
-        </html>
+        <!-- Bootstrap DatePicker-->
+        <script src="{{ asset('js/bootstrap-datepicker.js') }}""></script>
+        <script>
+          $('.date').datepicker({
+            format: 'dd/mm/yyyy',
+            autoclose: 'true'
+          })
+        </script>
+  </body>
+</html>
         

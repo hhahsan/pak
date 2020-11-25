@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.user.app')
 @section('title','Data tables')
 
 @section('content')
@@ -11,28 +11,33 @@
   <form role="form">
     <div class="card-body">
       <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputFile">File input</label>
-        <div class="input-group">
-          <div class="custom-file">
-            <input type="file" class="custom-file-input" id="exampleInputFile">
-            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-          </div>
-          <div class="input-group-append">
-            <span class="input-group-text" id="">Upload</span>
+        <label class="text-center">NAMA</label> 
+        <div class="card-body">
+          <div class="row">
+            <div class="col-3">
+              <input type="text" class="form-control" placeholder="Prof" disabled>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" placeholder="Nama" disabled>
+            </div>
+            <div class="col-3">
+              <input type="text" class="form-control" placeholder="Spd, MPD" disabled> 
+            </div>
           </div>
         </div>
       </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      <div class="form-group">
+        <label for="tempatLahir">Tempat Lahir</label>
+        <input type="text" class="form-control" id="tempatLahir" placeholder="Tempat Lahir">
+      </div>
+      <div class="form-group">
+        <label for="tanggalLahir">Tanggal Lahir</label>
+        <div class="input-group date" id="reservationdate" data-target-input="nearest">
+          <input type="text" class="date form-control" id="tanggalLahir" placeholder="DD/MM/YYYY">
+          <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- /.card-body -->
